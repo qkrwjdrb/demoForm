@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
         readonly List<string> allSensorList = new List<string> {
   "tem_1",
   "tem_2",
@@ -75,6 +76,9 @@ namespace WindowsFormsApp1
   "coH_2",
   "coH_3",
 };
+
+        #region chartdata
+           
         static List<ChartData> tem1ChartData = new List<ChartData> { };
         static List<ChartData> tem2ChartData = new List<ChartData> { };
         static List<ChartData> tem3ChartData = new List<ChartData> { };
@@ -126,6 +130,7 @@ namespace WindowsFormsApp1
         static List<ChartData> coH1ChartData = new List<ChartData> { };
         static List<ChartData> coH2ChartData = new List<ChartData> { };
         static List<ChartData> coH3ChartData = new List<ChartData> { };
+    #endregion
 
         List<List<ChartData>> sensorChartData = new List<List<ChartData>> {
           tem1ChartData,
@@ -180,6 +185,7 @@ namespace WindowsFormsApp1
           coH2ChartData,
           coH3ChartData
     };
+
         private void Form1_ResizeEnd(object sender, EventArgs e)
         {
             endResponsive();
@@ -255,16 +261,28 @@ namespace WindowsFormsApp1
 
 
                         DateTime date = DateTime.Parse($"{record.GetTime()}");
-                        var value = "{ record.GetValue()}";
+                        double value = double.Parse($"{ record.GetValue() }");
+                        if (!sensorChartData[i].Contains(new ChartData(date, value)))
+                        {
+                            sensorChartData[i].Add(new ChartData(date, value));
+                            if (i==1)
+                            {
+                                temDate.Add(date);
+                                temDouble.Add(value);
+                            }
+                        }
 
                     });
                 });
             }
             client.Dispose();
         }
+        static List<DateTime> temDate = new List<DateTime> { };
+        static List<double> temDouble = new List<double> { };
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //test
+            influxDB();
         }
 
         //테스트 버튼
@@ -272,23 +290,41 @@ namespace WindowsFormsApp1
         {
             influxDB();
         }
-        class ChartData
-        {
 
-
-            public ChartData(DateTime time, double value)
-            {
-                this.value = value;
-                this.time = time;
-            }
-
-            double value;
-            DateTime time;
-        }
-
+        //테스트 버튼
         private void button1_Click(object sender, EventArgs e)
         {
-            influxDB();
+            //influxDB();
+            chartTest();
+        }
+
+        private void chartTest()
+        {
+    
+            //chart2.Series.Add("tem");
+            chart2.DataBindTable(temDouble);
+        
+
+
+            //for (int i = 0; i < tem1ChartData.Count; i++)
+            //{
+            //}
+
+
         }
     }
 }
+public class ChartData
+{
+    double value;
+    DateTime time;
+
+    public ChartData(DateTime a, double b)
+    {
+        this.value = b;
+        this.time = a;
+    }
+
+
+}
+
