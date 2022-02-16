@@ -12,6 +12,7 @@ using InfluxDB.Client;
 using InfluxDB.Client.Core.Flux.Domain;
 using System;
 using System.Collections.Generic;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace WindowsFormsApp1
 {
@@ -303,19 +304,19 @@ namespace WindowsFormsApp1
     
             //chart2.Series.Add("tem");
             chart2.DataBindTable(temDouble);
-        
-
+            chart2.Series[0].XValueType = ChartValueType.DateTime;
 
             //for (int i = 0; i < tem1ChartData.Count; i++)
             //{
             //}
 
-
+            ChartData.chart_ = chart1;
         }
     }
 }
 public class ChartData
 {
+    public static Chart chart_ { get; set; }
     double value;
     DateTime time;
 
