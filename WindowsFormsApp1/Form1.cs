@@ -79,7 +79,7 @@ namespace WindowsFormsApp1
 };
 
         #region chartdata
-           
+
         static List<ChartData> tem1ChartData = new List<ChartData> { };
         static List<ChartData> tem2ChartData = new List<ChartData> { };
         static List<ChartData> tem3ChartData = new List<ChartData> { };
@@ -131,7 +131,7 @@ namespace WindowsFormsApp1
         static List<ChartData> coH1ChartData = new List<ChartData> { };
         static List<ChartData> coH2ChartData = new List<ChartData> { };
         static List<ChartData> coH3ChartData = new List<ChartData> { };
-    #endregion
+        #endregion
 
         List<List<ChartData>> sensorChartData = new List<List<ChartData>> {
           tem1ChartData,
@@ -266,7 +266,7 @@ namespace WindowsFormsApp1
                         if (!sensorChartData[i].Contains(new ChartData(date, value)))
                         {
                             sensorChartData[i].Add(new ChartData(date, value));
-                            if (i==1)
+                            if (i == 1)
                             {
                                 temDate.Add(date);
                                 temDouble.Add(value);
@@ -301,10 +301,13 @@ namespace WindowsFormsApp1
 
         private void chartTest()
         {
-    
+            chart1.Series[0].XValueType = ChartValueType.DateTime;
+            chart1.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd HH:mm:dd";
             //chart2.Series.Add("tem");
-            chart2.DataBindTable(temDouble);
-            chart2.Series[0].XValueType = ChartValueType.DateTime;
+
+            chart1.Series[0].Points.DataBind(sensorChartData[0], "Time", "Sensordata", null);
+            chart1.Series[1].Points.DataBind(sensorChartData[1], "Time", "Sensordata", null);
+            chart1.Series[2].Points.DataBind(sensorChartData[2], "Time", "Sensordata", null);
 
             //for (int i = 0; i < tem1ChartData.Count; i++)
             //{
@@ -317,15 +320,23 @@ namespace WindowsFormsApp1
 public class ChartData
 {
     public static Chart chart_ { get; set; }
-    double value;
+    double sensordata;
     DateTime time;
 
     public ChartData(DateTime a, double b)
     {
-        this.value = b;
+        this.sensordata = b;
         this.time = a;
     }
-
-
+    public DateTime Time
+    {
+        set { time = value; }
+        get { return time; }
+    }
+    public double Sensordata
+    {
+        set { sensordata = value; }
+        get { return sensordata; }
+    }
 }
 
