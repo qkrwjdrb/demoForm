@@ -1,5 +1,5 @@
 ﻿
-namespace WindowsFormsApp1
+namespace WinFormsApp5
 {
     partial class Form1
     {
@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
         /// 디자이너 지원에 필요한 메서드입니다. 
         /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
         /// </summary>
-        private void InitializeComponent()
+  /*      private void InitializeComponent()
         {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
@@ -55,12 +55,12 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.nh3Label = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.co2Label = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -153,8 +153,8 @@ namespace WindowsFormsApp1
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -299,7 +299,7 @@ namespace WindowsFormsApp1
             // 
             this.panel6.BackColor = System.Drawing.Color.Gray;
             this.panel6.Controls.Add(this.label14);
-            this.panel6.Controls.Add(this.label15);
+            this.panel6.Controls.Add(this.nh3Label);
             this.panel6.Controls.Add(this.label16);
             this.panel6.Controls.Add(this.label17);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -320,17 +320,17 @@ namespace WindowsFormsApp1
             this.label14.TabIndex = 2;
             this.label14.Text = "Completed";
             // 
-            // label15
+            // nh3Label
             // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(-19, 38);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(266, 25);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "95856565";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.nh3Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nh3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.nh3Label.ForeColor = System.Drawing.Color.White;
+            this.nh3Label.Location = new System.Drawing.Point(-19, 38);
+            this.nh3Label.Name = "nh3Label";
+            this.nh3Label.Size = new System.Drawing.Size(266, 25);
+            this.nh3Label.TabIndex = 1;
+            this.nh3Label.Text = "95856565";
+            this.nh3Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label16
             // 
@@ -359,7 +359,7 @@ namespace WindowsFormsApp1
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel5.Controls.Add(this.label10);
-            this.panel5.Controls.Add(this.label11);
+            this.panel5.Controls.Add(this.co2Label);
             this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.label13);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -380,17 +380,17 @@ namespace WindowsFormsApp1
             this.label10.TabIndex = 2;
             this.label10.Text = "Completed";
             // 
-            // label11
+            // co2Label
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(-31, 38);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(266, 25);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "95856565";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.co2Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.co2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.co2Label.ForeColor = System.Drawing.Color.White;
+            this.co2Label.Location = new System.Drawing.Point(-31, 38);
+            this.co2Label.Name = "co2Label";
+            this.co2Label.Size = new System.Drawing.Size(266, 25);
+            this.co2Label.TabIndex = 1;
+            this.co2Label.Text = "95856565";
+            this.co2Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label12
             // 
@@ -574,7 +574,7 @@ namespace WindowsFormsApp1
             this.ResumeLayout(false);
 
         }
-
+*/
         #endregion
 
         private System.Windows.Forms.Panel panel1;
@@ -599,12 +599,12 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label nh3Label;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label co2Label;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel4;
