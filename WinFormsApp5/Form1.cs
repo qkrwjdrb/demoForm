@@ -22,7 +22,7 @@ using Google.Protobuf;
 namespace WinFormsApp5
 {
     public partial class Form1 : Form
-    {
+    {/*
         public Form1()
         {
             InitializeComponent();
@@ -675,27 +675,6 @@ namespace WinFormsApp5
 
             ChartData.chart_ = chart1;
         }
-    }
-}
-public class ChartData
-{
-    public static Chart chart_ { get; set; }
-    double sensordata;
-    DateTime time;
-
-    public ChartData(DateTime a, double b)
-    {
-        this.sensordata = b;
-        this.time = a;
-    }
-    public DateTime Time
-    {
-        set { time = value; }
-        get { return time; }
-    }
-    public double Sensordata
-    {
-        set { sensordata = value; }
-        get { return sensordata; }
+ */ 
     }
 }

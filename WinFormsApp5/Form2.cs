@@ -47,7 +47,7 @@ namespace WinFormsApp5
 
         private void button2_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Form1(), sender);
+            OpenChildForm(new Forms.Formc(), sender);
         }
     }
 }
