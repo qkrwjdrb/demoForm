@@ -8,5 +8,7 @@ namespace WinFormsApp5.classes
 {
     class Class1
     {
+        public uint[] gateway;
+        public UInt64[] device;
     }
 }

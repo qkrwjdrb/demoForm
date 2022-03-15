@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsApp5.Forms;
 
 namespace WinFormsApp5
 {
@@ -25,8 +26,6 @@ namespace WinFormsApp5
             {
                 activeForm.Close();
             }
-
-            //ActivateButton(btnSender);
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -35,19 +34,28 @@ namespace WinFormsApp5
             this.panel3.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            //lblTitle.Text = childForm.Text;
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.FormChart(), sender);
         }
-
+     
         private void button2_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.Formc(), sender);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<Formc>().Any())
+            {
+                button3.Text = "asdfadsf";
+            }
+            else
+            {
+                button3.Text = "1213241235234";
+            }
         }
     }
 }

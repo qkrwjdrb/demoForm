@@ -24,8 +24,12 @@ namespace WinFormsApp5.Forms
         {
             InitializeComponent();
         }
-
-        readonly List<string> allSensorList = new List<string> {
+        ~Formc()
+        {
+                Dispose();
+            
+        }
+            readonly List<string> allSensorList = new List<string> {
   "tem_1",
   "tem_2",
   "tem_3",
@@ -291,89 +295,74 @@ namespace WinFormsApp5.Forms
         {
             //test
             influxDB();
+          
         }
 
         private void makeChart()
         {
-            chart1.Series.Clear();
-            chart2.Series.Clear();
-            chart3.Series.Clear();
-            chart4.Series.Clear();
 
+            var a = sensorChartData[0];
+
+            chart1.Series.Clear();
             chart1.Series.Add("온도_1");
             chart1.Series.Add("온도_2");
             chart1.Series.Add("온도_3");
-
-            chart2.Series.Add("습도_1");
-            chart2.Series.Add("습도_2");
-            chart2.Series.Add("습도_3");
-
-            chart3.Series.Add("CO2_1");
-            chart3.Series.Add("CO2_2");
-            chart3.Series.Add("CO2_3");
-
-            chart4.Series.Add("암모니아_1");
-            chart4.Series.Add("암모니아_2");
-            chart4.Series.Add("암모니아_3");
-
             chart1.Series[0].XValueType = ChartValueType.DateTime;
             chart1.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd HH:mm:dd";
-            chart2.Series[0].XValueType = ChartValueType.DateTime;
-            chart2.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd HH:mm:dd";
-            chart3.Series[0].XValueType = ChartValueType.DateTime;
-            chart3.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd HH:mm:dd";
-            chart4.Series[0].XValueType = ChartValueType.DateTime;
-            chart4.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd HH:mm:dd";
-
-
-
-
             chart1.Series[0].Points.DataBind(sensorChartData[0], "Time", "Sensordata", null);
             chart1.Series[1].Points.DataBind(sensorChartData[1], "Time", "Sensordata", null);
             chart1.Series[2].Points.DataBind(sensorChartData[2], "Time", "Sensordata", null);
-
-            chart2.Series[0].Points.DataBind(sensorChartData[3], "Time", "Sensordata", null);
-            chart2.Series[1].Points.DataBind(sensorChartData[4], "Time", "Sensordata", null);
-            chart2.Series[2].Points.DataBind(sensorChartData[5], "Time", "Sensordata", null);
-
-            chart3.Series[0].Points.DataBind(sensorChartData[6], "Time", "Sensordata", null);
-            chart3.Series[1].Points.DataBind(sensorChartData[7], "Time", "Sensordata", null);
-            chart3.Series[2].Points.DataBind(sensorChartData[8], "Time", "Sensordata", null);
-
-            chart4.Series[0].Points.DataBind(sensorChartData[14], "Time", "Sensordata", null);
-            chart4.Series[1].Points.DataBind(sensorChartData[15], "Time", "Sensordata", null);
-            chart4.Series[2].Points.DataBind(sensorChartData[16], "Time", "Sensordata", null);
-
-
-
             chart1.Series[0].ChartType = SeriesChartType.Line;
             chart1.Series[1].ChartType = SeriesChartType.Line;
             chart1.Series[2].ChartType = SeriesChartType.Line;
 
+
+            chart2.Series.Clear();
+            chart2.Series.Add("습도_1");
+            chart2.Series.Add("습도_2");
+            chart2.Series.Add("습도_3");
+            chart2.Series[0].XValueType = ChartValueType.DateTime;
+            chart2.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd HH:mm:dd";
+            chart2.Series[0].Points.DataBind(sensorChartData[3], "Time", "Sensordata", null);
+            chart2.Series[1].Points.DataBind(sensorChartData[4], "Time", "Sensordata", null);
+            chart2.Series[2].Points.DataBind(sensorChartData[5], "Time", "Sensordata", null);
             chart2.Series[0].ChartType = SeriesChartType.Line;
             chart2.Series[1].ChartType = SeriesChartType.Line;
             chart2.Series[2].ChartType = SeriesChartType.Line;
 
+
+            chart3.Series.Clear();
+            chart3.Series.Add("CO2_1");
+            chart3.Series.Add("CO2_2");
+            chart3.Series.Add("CO2_3");
+            chart3.Series[0].XValueType = ChartValueType.DateTime;
+            chart3.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd HH:mm:dd";
+            chart3.Series[0].Points.DataBind(sensorChartData[6], "Time", "Sensordata", null);
+            chart3.Series[1].Points.DataBind(sensorChartData[7], "Time", "Sensordata", null);
+            chart3.Series[2].Points.DataBind(sensorChartData[8], "Time", "Sensordata", null);
             chart3.Series[0].ChartType = SeriesChartType.Line;
             chart3.Series[1].ChartType = SeriesChartType.Line;
             chart3.Series[2].ChartType = SeriesChartType.Line;
 
+
+            chart4.Series.Clear();
+            chart4.Series.Add("조도_1");
+            chart4.Series.Add("조도_2");
+            chart4.Series.Add("조도_3");
+            chart4.Series[0].XValueType = ChartValueType.DateTime;
+            chart4.ChartAreas[0].AxisX.LabelStyle.Format = "yyyy-MM-dd HH:mm:dd";
+            chart4.Series[0].Points.DataBind(sensorChartData[9], "Time", "Sensordata", null);
+            chart4.Series[1].Points.DataBind(sensorChartData[10], "Time", "Sensordata", null);
+            chart4.Series[2].Points.DataBind(sensorChartData[11], "Time", "Sensordata", null);
             chart4.Series[0].ChartType = SeriesChartType.Line;
             chart4.Series[1].ChartType = SeriesChartType.Line;
             chart4.Series[2].ChartType = SeriesChartType.Line;
-
-
-
-
-            //chart2.Series[0].LegendText = "습도";
-            //for (int i = 0; i < tem1ChartData.Count; i++)
-            //{
-            //}
-
-            ChartData.chart_ = chart1;
+            
+        
         }
     }
 }
+
 public class ChartData
 {
     public static Chart chart_ { get; set; }
