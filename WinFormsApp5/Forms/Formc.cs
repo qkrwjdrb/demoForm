@@ -12,9 +12,9 @@ using Google.Protobuf;
 using Grpc.Core;
 using Grpc.Net.Client;
 using NetExchange;
-
 using System.Threading;
 using System.Net.Http;
+
 
 namespace WinFormsApp5.Forms
 {
@@ -24,12 +24,8 @@ namespace WinFormsApp5.Forms
         {
             InitializeComponent();
         }
-        ~Formc()
-        {
-                Dispose();
-            
-        }
-            readonly List<string> allSensorList = new List<string> {
+
+        readonly List<string> allSensorList = new List<string> {
   "tem_1",
   "tem_2",
   "tem_3",
@@ -226,7 +222,7 @@ namespace WinFormsApp5.Forms
             {
                 tableLayoutPanel2.ColumnStyles[1].Width = 350;
             }
-            else if(this.Width<1010) 
+            else if (this.Width < 1010)
             {
                 tableLayoutPanel2.ColumnStyles[1].Width = tableLayoutPanel2.Width - (chart1.Width + chart1.Margin.Right);
             }
@@ -295,14 +291,21 @@ namespace WinFormsApp5.Forms
         {
             //test
             influxDB();
-          
+
         }
 
         private void makeChart()
         {
 
-            var a = sensorChartData[0];
-
+            var allTempList = new List<ChartData>();
+            allTempList.AddRange(sensorChartData[0]);
+            allTempList.AddRange(sensorChartData[1]);
+            allTempList.AddRange(sensorChartData[2]);
+            allTempList = allTempList.Distinct().ToList();
+            var allTempValue = from TempList in allTempList
+                               select TempList.Sensordata;
+            chart1.ChartAreas[0].AxisY.Maximum = (int)allTempValue.Max();
+            chart1.ChartAreas[0].AxisY.Minimum = (int)allTempValue.Min();
             chart1.Series.Clear();
             chart1.Series.Add("온도_1");
             chart1.Series.Add("온도_2");
@@ -317,6 +320,16 @@ namespace WinFormsApp5.Forms
             chart1.Series[2].ChartType = SeriesChartType.Line;
 
 
+            var allHumList = new List<ChartData>();
+            allHumList.AddRange(hum1ChartData);
+            allHumList.AddRange(hum2ChartData);
+            allHumList.AddRange(hum3ChartData);
+            allHumList = allHumList.Distinct().ToList();
+            var allHumValue = from HumList in allHumList
+                              select HumList.Sensordata;
+            chart2.ChartAreas[0].AxisY.Maximum = (int)allHumValue.Max();
+            chart2.ChartAreas[0].AxisY.Minimum = (int)allHumValue.Min();
+
             chart2.Series.Clear();
             chart2.Series.Add("습도_1");
             chart2.Series.Add("습도_2");
@@ -330,6 +343,15 @@ namespace WinFormsApp5.Forms
             chart2.Series[1].ChartType = SeriesChartType.Line;
             chart2.Series[2].ChartType = SeriesChartType.Line;
 
+            var allCo2List = new List<ChartData>();
+            allCo2List.AddRange(co21ChartData);
+            allCo2List.AddRange(co22ChartData);
+            allCo2List.AddRange(co23ChartData);
+            allCo2List = allCo2List.Distinct().ToList();
+            var allCo2Value = from Co2List in allCo2List
+                              select Co2List.Sensordata;
+            chart3.ChartAreas[0].AxisY.Maximum = (int)allCo2Value.Max();
+            chart3.ChartAreas[0].AxisY.Minimum = (int)allCo2Value.Min();
 
             chart3.Series.Clear();
             chart3.Series.Add("CO2_1");
@@ -344,6 +366,15 @@ namespace WinFormsApp5.Forms
             chart3.Series[1].ChartType = SeriesChartType.Line;
             chart3.Series[2].ChartType = SeriesChartType.Line;
 
+            var allLuxList = new List<ChartData>();
+            allLuxList.AddRange(lux1ChartData);
+            allLuxList.AddRange(lux2ChartData);
+            allLuxList.AddRange(lux3ChartData);
+            allLuxList = allLuxList.Distinct().ToList();
+            var allLuxValue = from LuxList in allLuxList
+                              select LuxList.Sensordata;
+            chart4.ChartAreas[0].AxisY.Maximum = (int)allLuxValue.Max();
+            chart4.ChartAreas[0].AxisY.Minimum = (int)allLuxValue.Min();
 
             chart4.Series.Clear();
             chart4.Series.Add("조도_1");
@@ -357,8 +388,8 @@ namespace WinFormsApp5.Forms
             chart4.Series[0].ChartType = SeriesChartType.Line;
             chart4.Series[1].ChartType = SeriesChartType.Line;
             chart4.Series[2].ChartType = SeriesChartType.Line;
-            
-        
+
+
         }
     }
 }
