@@ -18,9 +18,9 @@ using System.Net.Http;
 
 namespace WinFormsApp5.Forms
 {
-    public partial class Formc : Form
+    public partial class ChartForm : Form
     {
-        public Formc()
+        public ChartForm()
         {
             InitializeComponent();
         }
@@ -329,7 +329,6 @@ namespace WinFormsApp5.Forms
                               select HumList.Sensordata;
             chart2.ChartAreas[0].AxisY.Maximum = (int)allHumValue.Max();
             chart2.ChartAreas[0].AxisY.Minimum = (int)allHumValue.Min();
-
             chart2.Series.Clear();
             chart2.Series.Add("습도_1");
             chart2.Series.Add("습도_2");
@@ -352,7 +351,6 @@ namespace WinFormsApp5.Forms
                               select Co2List.Sensordata;
             chart3.ChartAreas[0].AxisY.Maximum = (int)allCo2Value.Max();
             chart3.ChartAreas[0].AxisY.Minimum = (int)allCo2Value.Min();
-
             chart3.Series.Clear();
             chart3.Series.Add("CO2_1");
             chart3.Series.Add("CO2_2");
@@ -375,7 +373,6 @@ namespace WinFormsApp5.Forms
                               select LuxList.Sensordata;
             chart4.ChartAreas[0].AxisY.Maximum = (int)allLuxValue.Max();
             chart4.ChartAreas[0].AxisY.Minimum = (int)allLuxValue.Min();
-
             chart4.Series.Clear();
             chart4.Series.Add("조도_1");
             chart4.Series.Add("조도_2");
