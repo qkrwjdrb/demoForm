@@ -41,7 +41,6 @@ namespace WinFormsApp5.Forms
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
             this.deviceBox = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -205,15 +204,6 @@ namespace WinFormsApp5.Forms
             this.label1.Size = new System.Drawing.Size(27, 15);
             this.label1.TabIndex = 7;
             this.label1.Text = "(초)";
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(261, 72);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(100, 23);
-            this.button8.TabIndex = 42;
-            this.button8.Text = "리셋";
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // deviceBox
             // 
@@ -424,91 +414,83 @@ namespace WinFormsApp5.Forms
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(283, 222);
+            this.button9.Location = new System.Drawing.Point(306, 238);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(100, 23);
-            this.button9.TabIndex = 1;
-            this.button9.Text = "좌회전";
+            this.button9.Size = new System.Drawing.Size(123, 24);
+            this.button9.TabIndex = 45;
+            this.button9.Text = "button9";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button2_Click);
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(389, 222);
+            this.button10.Location = new System.Drawing.Point(435, 238);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(100, 23);
-            this.button10.TabIndex = 1;
-            this.button10.Text = "좌회전";
+            this.button10.Size = new System.Drawing.Size(123, 24);
+            this.button10.TabIndex = 46;
+            this.button10.Text = "button10";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button2_Click);
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(495, 222);
+            this.button11.Location = new System.Drawing.Point(564, 238);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(100, 23);
-            this.button11.TabIndex = 1;
-            this.button11.Text = "좌회전";
+            this.button11.Size = new System.Drawing.Size(123, 24);
+            this.button11.TabIndex = 47;
+            this.button11.Text = "button11";
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button2_Click);
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(601, 222);
+            this.button12.Location = new System.Drawing.Point(693, 238);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(100, 23);
-            this.button12.TabIndex = 1;
-            this.button12.Text = "좌회전";
+            this.button12.Size = new System.Drawing.Size(123, 24);
+            this.button12.TabIndex = 48;
+            this.button12.Text = "button12";
             this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button2_Click);
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(283, 267);
+            this.button13.Location = new System.Drawing.Point(306, 272);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(100, 23);
-            this.button13.TabIndex = 1;
-            this.button13.Text = "좌회전";
+            this.button13.Size = new System.Drawing.Size(123, 24);
+            this.button13.TabIndex = 49;
+            this.button13.Text = "button13";
             this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button2_Click);
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(389, 267);
+            this.button14.Location = new System.Drawing.Point(435, 272);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(100, 23);
-            this.button14.TabIndex = 1;
-            this.button14.Text = "좌회전";
+            this.button14.Size = new System.Drawing.Size(123, 24);
+            this.button14.TabIndex = 50;
+            this.button14.Text = "button14";
             this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button2_Click);
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(495, 267);
+            this.button15.Location = new System.Drawing.Point(564, 272);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(100, 23);
-            this.button15.TabIndex = 1;
-            this.button15.Text = "좌회전";
+            this.button15.Size = new System.Drawing.Size(123, 24);
+            this.button15.TabIndex = 51;
+            this.button15.Text = "button15";
             this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button2_Click);
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(601, 267);
+            this.button16.Location = new System.Drawing.Point(693, 272);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(100, 23);
-            this.button16.TabIndex = 1;
-            this.button16.Text = "좌회전";
+            this.button16.Size = new System.Drawing.Size(123, 24);
+            this.button16.TabIndex = 52;
+            this.button16.Text = "button16";
             this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button2_Click);
             // 
             // ControlForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1045, 748);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
@@ -517,7 +499,8 @@ namespace WinFormsApp5.Forms
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.deviceBox);
             this.Controls.Add(this.gatewayBox);
@@ -547,7 +530,6 @@ namespace WinFormsApp5.Forms
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.ComboBox deviceBox;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox checkBox1;

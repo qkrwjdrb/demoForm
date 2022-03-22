@@ -257,5 +257,14 @@ namespace WinFormsApp5.Forms
             }
         }
 
+        private void button15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
