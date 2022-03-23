@@ -29,7 +29,6 @@ namespace WinFormsApp5.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.gatewayBox = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -41,11 +40,6 @@ namespace WinFormsApp5.Forms
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.deviceBox = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -70,29 +64,8 @@ namespace WinFormsApp5.Forms
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // gatewayBox
-            // 
-            this.gatewayBox.FormattingEnabled = true;
-            this.gatewayBox.Items.AddRange(new object[] {
-            "308398D9E8F5",
-            "4C7525891309",
-            "4C7525891709",
-            "4C752589171D",
-            "4C7525891719",
-            "4C75258916ED",
-            "4C752589170D",
-            "500291AEBD15",
-            "4C75258914DD",
-            "4C752589150D",
-            "4C7525C1CF89"});
-            this.gatewayBox.Location = new System.Drawing.Point(20, 72);
-            this.gatewayBox.Name = "gatewayBox";
-            this.gatewayBox.Size = new System.Drawing.Size(100, 23);
-            this.gatewayBox.TabIndex = 0;
             // 
             // groupBox3
             // 
@@ -106,7 +79,7 @@ namespace WinFormsApp5.Forms
             this.groupBox3.Controls.Add(this.textBox2);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Location = new System.Drawing.Point(12, 127);
+            this.groupBox3.Location = new System.Drawing.Point(306, 38);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(245, 169);
             this.groupBox3.TabIndex = 41;
@@ -204,65 +177,6 @@ namespace WinFormsApp5.Forms
             this.label1.Size = new System.Drawing.Size(27, 15);
             this.label1.TabIndex = 7;
             this.label1.Text = "(초)";
-            // 
-            // deviceBox
-            // 
-            this.deviceBox.FormattingEnabled = true;
-            this.deviceBox.Items.AddRange(new object[] {
-            "308398D9E8F5",
-            "4C7525891309",
-            "4C7525891709",
-            "4C752589171D",
-            "4C7525891719",
-            "4C75258916ED",
-            "4C752589170D",
-            "500291AEBD15",
-            "4C75258914DD",
-            "4C752589150D",
-            "4C7525C1CF89"});
-            this.deviceBox.Location = new System.Drawing.Point(142, 72);
-            this.deviceBox.Name = "deviceBox";
-            this.deviceBox.Size = new System.Drawing.Size(100, 23);
-            this.deviceBox.TabIndex = 0;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(277, 127);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(272, 63);
-            this.groupBox1.TabIndex = 43;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "OPID";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 27);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(102, 19);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "OPID수동설정";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(197, 24);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(60, 23);
-            this.textBox3.TabIndex = 12;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("맑은 고딕", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(110, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 19);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "OPID (DEC)";
             // 
             // groupBox4
             // 
@@ -414,7 +328,7 @@ namespace WinFormsApp5.Forms
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(306, 238);
+            this.button9.Location = new System.Drawing.Point(28, 63);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(123, 24);
             this.button9.TabIndex = 45;
@@ -423,7 +337,7 @@ namespace WinFormsApp5.Forms
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(435, 238);
+            this.button10.Location = new System.Drawing.Point(157, 63);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(123, 24);
             this.button10.TabIndex = 46;
@@ -432,7 +346,7 @@ namespace WinFormsApp5.Forms
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(564, 238);
+            this.button11.Location = new System.Drawing.Point(28, 131);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(123, 24);
             this.button11.TabIndex = 47;
@@ -441,7 +355,7 @@ namespace WinFormsApp5.Forms
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(693, 238);
+            this.button12.Location = new System.Drawing.Point(157, 131);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(123, 24);
             this.button12.TabIndex = 48;
@@ -450,7 +364,7 @@ namespace WinFormsApp5.Forms
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(306, 272);
+            this.button13.Location = new System.Drawing.Point(28, 97);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(123, 24);
             this.button13.TabIndex = 49;
@@ -459,7 +373,7 @@ namespace WinFormsApp5.Forms
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(435, 272);
+            this.button14.Location = new System.Drawing.Point(157, 97);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(123, 24);
             this.button14.TabIndex = 50;
@@ -469,7 +383,7 @@ namespace WinFormsApp5.Forms
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(564, 272);
+            this.button15.Location = new System.Drawing.Point(28, 165);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(123, 24);
             this.button15.TabIndex = 51;
@@ -479,7 +393,7 @@ namespace WinFormsApp5.Forms
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(693, 272);
+            this.button16.Location = new System.Drawing.Point(157, 165);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(123, 24);
             this.button16.TabIndex = 52;
@@ -500,16 +414,11 @@ namespace WinFormsApp5.Forms
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.deviceBox);
-            this.Controls.Add(this.gatewayBox);
             this.Name = "ControlForm";
             this.Text = "FormChart";
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
@@ -518,7 +427,6 @@ namespace WinFormsApp5.Forms
 
         #endregion
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.ComboBox gatewayBox;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button2;
@@ -530,11 +438,6 @@ namespace WinFormsApp5.Forms
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox deviceBox;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox4;
