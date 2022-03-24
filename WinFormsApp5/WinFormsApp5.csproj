@@ -23,6 +23,7 @@
     </PackageReference>
     <PackageReference Include="InfluxDB.Client" Version="3.3.0" />
     <PackageReference Include="InfluxDB.Client.Core" Version="3.3.0" />
+    <PackageReference Include="Krypton.Toolkit" Version="60.22.2.32" />
     <PackageReference Include="Maikebing.System.Windows.Forms.DataVisualization" Version="5.0.1" />
   </ItemGroup>
 

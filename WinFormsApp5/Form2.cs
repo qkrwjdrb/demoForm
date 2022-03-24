@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp5.Forms;
@@ -13,10 +13,11 @@ using Grpc.Net.Client;
 using NetExchange;
 using Google.Protobuf;
 using System.Threading;
+using Krypton.Toolkit;
 
 namespace WinFormsApp5
 {
-    public partial class Form2 : Form
+    public partial class Form2 : KryptonForm
     {
         public static Form2 f2;
         private Form activeForm;
