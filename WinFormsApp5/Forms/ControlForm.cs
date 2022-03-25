@@ -16,16 +16,42 @@ using WinFormsApp5;
 
 namespace WinFormsApp5.Forms
 {
+  
+        class Address
+        {
+            public uint gateway;
+            public ulong device;
+            public Address(uint gatewayAdr, ulong deviceAdr)
+            {
+                gateway = gatewayAdr;
+                device = deviceAdr;
+            }
+     
+        }
+    
     public partial class ControlForm : Form
     {
+        Address address1 = new Address(0, 0);
+        Address address2 = new Address(0, 0);
+        Address address3 = new Address(0, 0);
+        Address address4 = new Address(0, 0);
+        Address address5 = new Address(0, 0);
+        Address address6 = new Address(0, 0);
+        Address address7 = new Address(0, 0);
+        Address address8 = new Address(0, 0);
+
+        //gatewayAddress = address1.gateway;
+        ushort opid = 0;
+        uint gatewayAddress = 0;
+        ulong deviceAddress = 0x4C7525C1CF89;
+
+
+
         public ControlForm()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
-        ushort opid = 0;
-        uint gatewayAddress = 0x0;
-        ulong deviceAddress = 0x4C7525C1CF89;
         private void button1_Click(object sender, EventArgs e)
         {
             //리셋
@@ -243,17 +269,92 @@ namespace WinFormsApp5.Forms
             }
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ControlForm_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void OnButton1_Click(object sender, EventArgs e)
+        {
+            Form2.f2.TxRtu(++Form2.f2.TxCnt, gatewayAddress, deviceAddress, new byte[]
+            {
+                    0x01, 0x10, 0x01, 0xF7, 0x00, 0x04, 0x08,
+                    0x00, 0x00, (byte)(opid>>8),(byte)opid,0x00,0x00,0x00,0x00
+            });
+            opid++;
+
+        }
+
+        private void OffButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OffButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OffButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OffButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OffButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnButton6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OffButton6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnButton7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OffButton7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnButton8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OffButton8_Click(object sender, EventArgs e)
         {
 
         }

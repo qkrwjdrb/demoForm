@@ -55,34 +55,34 @@ namespace WinFormsApp5.Forms
             this.상태 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.OnButton1 = new System.Windows.Forms.Button();
+            this.OffButton1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
+            this.OnButton3 = new System.Windows.Forms.Button();
+            this.OffButton3 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
+            this.OnButton4 = new System.Windows.Forms.Button();
+            this.OffButton4 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
+            this.OnButton5 = new System.Windows.Forms.Button();
+            this.OffButton5 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
+            this.OnButton6 = new System.Windows.Forms.Button();
+            this.OffButton6 = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
+            this.OnButton7 = new System.Windows.Forms.Button();
+            this.OffButton7 = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
+            this.OnButton8 = new System.Windows.Forms.Button();
+            this.OffButton8 = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.OnButton2 = new System.Windows.Forms.Button();
+            this.OffButton2 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -108,7 +108,7 @@ namespace WinFormsApp5.Forms
             this.groupBox3.Controls.Add(this.textBox2);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Location = new System.Drawing.Point(305, 78);
+            this.groupBox3.Location = new System.Drawing.Point(20, 247);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(245, 169);
             this.groupBox3.TabIndex = 41;
@@ -223,7 +223,7 @@ namespace WinFormsApp5.Forms
             this.groupBox4.Controls.Add(this.상태);
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Location = new System.Drawing.Point(556, 78);
+            this.groupBox4.Location = new System.Drawing.Point(274, 247);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(177, 169);
             this.groupBox4.TabIndex = 44;
@@ -355,25 +355,25 @@ namespace WinFormsApp5.Forms
             this.label7.TabIndex = 41;
             this.label7.Text = "상태";
             // 
-            // button9
+            // OnButton1
             // 
-            this.button9.Location = new System.Drawing.Point(15, 35);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(86, 24);
-            this.button9.TabIndex = 45;
-            this.button9.Text = "ON";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.OnButton1.Location = new System.Drawing.Point(15, 35);
+            this.OnButton1.Name = "OnButton1";
+            this.OnButton1.Size = new System.Drawing.Size(86, 24);
+            this.OnButton1.TabIndex = 45;
+            this.OnButton1.Text = "ON";
+            this.OnButton1.UseVisualStyleBackColor = true;
+            this.OnButton1.Click += new System.EventHandler(this.OnButton1_Click);
             // 
-            // button13
+            // OffButton1
             // 
-            this.button13.Location = new System.Drawing.Point(15, 69);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(86, 24);
-            this.button13.TabIndex = 49;
-            this.button13.Text = "OFF";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.OffButton1.Location = new System.Drawing.Point(15, 69);
+            this.OffButton1.Name = "OffButton1";
+            this.OffButton1.Size = new System.Drawing.Size(86, 24);
+            this.OffButton1.TabIndex = 49;
+            this.OffButton1.Text = "OFF";
+            this.OffButton1.UseVisualStyleBackColor = true;
+            this.OffButton1.Click += new System.EventHandler(this.OffButton1_Click);
             // 
             // label2
             // 
@@ -407,7 +407,7 @@ namespace WinFormsApp5.Forms
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(27, 78);
+            this.groupBox1.Location = new System.Drawing.Point(20, 162);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(272, 63);
             this.groupBox1.TabIndex = 53;
@@ -416,216 +416,223 @@ namespace WinFormsApp5.Forms
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button9);
-            this.groupBox2.Controls.Add(this.button13);
-            this.groupBox2.Location = new System.Drawing.Point(20, 485);
+            this.groupBox2.Controls.Add(this.OnButton1);
+            this.groupBox2.Controls.Add(this.OffButton1);
+            this.groupBox2.Location = new System.Drawing.Point(20, 479);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(117, 125);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.button24);
-            this.groupBox5.Controls.Add(this.button25);
-            this.groupBox5.Location = new System.Drawing.Point(274, 485);
+            this.groupBox5.Controls.Add(this.OnButton3);
+            this.groupBox5.Controls.Add(this.OffButton3);
+            this.groupBox5.Location = new System.Drawing.Point(274, 479);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(117, 125);
             this.groupBox5.TabIndex = 50;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "groupBox5";
             // 
-            // button24
+            // OnButton3
             // 
-            this.button24.Location = new System.Drawing.Point(15, 35);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(86, 24);
-            this.button24.TabIndex = 45;
-            this.button24.Text = "ON";
-            this.button24.UseVisualStyleBackColor = true;
+            this.OnButton3.Location = new System.Drawing.Point(15, 35);
+            this.OnButton3.Name = "OnButton3";
+            this.OnButton3.Size = new System.Drawing.Size(86, 24);
+            this.OnButton3.TabIndex = 45;
+            this.OnButton3.Text = "ON";
+            this.OnButton3.UseVisualStyleBackColor = true;
+            this.OnButton3.Click += new System.EventHandler(this.OnButton3_Click);
             // 
-            // button25
+            // OffButton3
             // 
-            this.button25.Location = new System.Drawing.Point(15, 69);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(86, 24);
-            this.button25.TabIndex = 49;
-            this.button25.Text = "OFF";
-            this.button25.UseVisualStyleBackColor = true;
+            this.OffButton3.Location = new System.Drawing.Point(15, 69);
+            this.OffButton3.Name = "OffButton3";
+            this.OffButton3.Size = new System.Drawing.Size(86, 24);
+            this.OffButton3.TabIndex = 49;
+            this.OffButton3.Text = "OFF";
+            this.OffButton3.UseVisualStyleBackColor = true;
+            this.OffButton3.Click += new System.EventHandler(this.OffButton3_Click);
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.button26);
-            this.groupBox6.Controls.Add(this.button27);
-            this.groupBox6.Location = new System.Drawing.Point(401, 485);
+            this.groupBox6.Controls.Add(this.OnButton4);
+            this.groupBox6.Controls.Add(this.OffButton4);
+            this.groupBox6.Location = new System.Drawing.Point(401, 479);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(117, 125);
             this.groupBox6.TabIndex = 50;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "groupBox6";
             // 
-            // button26
+            // OnButton4
             // 
-            this.button26.Location = new System.Drawing.Point(15, 35);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(86, 24);
-            this.button26.TabIndex = 45;
-            this.button26.Text = "ON";
-            this.button26.UseVisualStyleBackColor = true;
+            this.OnButton4.Location = new System.Drawing.Point(15, 35);
+            this.OnButton4.Name = "OnButton4";
+            this.OnButton4.Size = new System.Drawing.Size(86, 24);
+            this.OnButton4.TabIndex = 45;
+            this.OnButton4.Text = "ON";
+            this.OnButton4.UseVisualStyleBackColor = true;
+            this.OnButton4.Click += new System.EventHandler(this.OnButton4_Click);
             // 
-            // button27
+            // OffButton4
             // 
-            this.button27.Location = new System.Drawing.Point(15, 69);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(86, 24);
-            this.button27.TabIndex = 49;
-            this.button27.Text = "OFF";
-            this.button27.UseVisualStyleBackColor = true;
+            this.OffButton4.Location = new System.Drawing.Point(15, 69);
+            this.OffButton4.Name = "OffButton4";
+            this.OffButton4.Size = new System.Drawing.Size(86, 24);
+            this.OffButton4.TabIndex = 49;
+            this.OffButton4.Text = "OFF";
+            this.OffButton4.UseVisualStyleBackColor = true;
+            this.OffButton4.Click += new System.EventHandler(this.OffButton4_Click);
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.button28);
-            this.groupBox7.Controls.Add(this.button29);
-            this.groupBox7.Location = new System.Drawing.Point(529, 485);
+            this.groupBox7.Controls.Add(this.OnButton5);
+            this.groupBox7.Controls.Add(this.OffButton5);
+            this.groupBox7.Location = new System.Drawing.Point(529, 479);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(117, 125);
             this.groupBox7.TabIndex = 50;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "groupBox7";
             // 
-            // button28
+            // OnButton5
             // 
-            this.button28.Location = new System.Drawing.Point(15, 35);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(86, 24);
-            this.button28.TabIndex = 45;
-            this.button28.Text = "ON";
-            this.button28.UseVisualStyleBackColor = true;
+            this.OnButton5.Location = new System.Drawing.Point(15, 35);
+            this.OnButton5.Name = "OnButton5";
+            this.OnButton5.Size = new System.Drawing.Size(86, 24);
+            this.OnButton5.TabIndex = 45;
+            this.OnButton5.Text = "ON";
+            this.OnButton5.UseVisualStyleBackColor = true;
+            this.OnButton5.Click += new System.EventHandler(this.OnButton5_Click);
             // 
-            // button29
+            // OffButton5
             // 
-            this.button29.Location = new System.Drawing.Point(15, 69);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(86, 24);
-            this.button29.TabIndex = 49;
-            this.button29.Text = "OFF";
-            this.button29.UseVisualStyleBackColor = true;
+            this.OffButton5.Location = new System.Drawing.Point(15, 69);
+            this.OffButton5.Name = "OffButton5";
+            this.OffButton5.Size = new System.Drawing.Size(86, 24);
+            this.OffButton5.TabIndex = 49;
+            this.OffButton5.Text = "OFF";
+            this.OffButton5.UseVisualStyleBackColor = true;
+            this.OffButton5.Click += new System.EventHandler(this.OffButton5_Click);
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.button30);
-            this.groupBox8.Controls.Add(this.button31);
-            this.groupBox8.Location = new System.Drawing.Point(656, 485);
+            this.groupBox8.Controls.Add(this.OnButton6);
+            this.groupBox8.Controls.Add(this.OffButton6);
+            this.groupBox8.Location = new System.Drawing.Point(656, 479);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(117, 125);
             this.groupBox8.TabIndex = 50;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "groupBox8";
             // 
-            // button30
+            // OnButton6
             // 
-            this.button30.Location = new System.Drawing.Point(15, 35);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(86, 24);
-            this.button30.TabIndex = 45;
-            this.button30.Text = "ON";
-            this.button30.UseVisualStyleBackColor = true;
+            this.OnButton6.Location = new System.Drawing.Point(15, 35);
+            this.OnButton6.Name = "OnButton6";
+            this.OnButton6.Size = new System.Drawing.Size(86, 24);
+            this.OnButton6.TabIndex = 45;
+            this.OnButton6.Text = "ON";
+            this.OnButton6.UseVisualStyleBackColor = true;
+            this.OnButton6.Click += new System.EventHandler(this.OnButton6_Click);
             // 
-            // button31
+            // OffButton6
             // 
-            this.button31.Location = new System.Drawing.Point(15, 69);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(86, 24);
-            this.button31.TabIndex = 49;
-            this.button31.Text = "OFF";
-            this.button31.UseVisualStyleBackColor = true;
+            this.OffButton6.Location = new System.Drawing.Point(15, 69);
+            this.OffButton6.Name = "OffButton6";
+            this.OffButton6.Size = new System.Drawing.Size(86, 24);
+            this.OffButton6.TabIndex = 49;
+            this.OffButton6.Text = "OFF";
+            this.OffButton6.UseVisualStyleBackColor = true;
+            this.OffButton6.Click += new System.EventHandler(this.OffButton6_Click);
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.button32);
-            this.groupBox9.Controls.Add(this.button33);
-            this.groupBox9.Location = new System.Drawing.Point(783, 485);
+            this.groupBox9.Controls.Add(this.OnButton7);
+            this.groupBox9.Controls.Add(this.OffButton7);
+            this.groupBox9.Location = new System.Drawing.Point(783, 479);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(117, 125);
             this.groupBox9.TabIndex = 50;
             this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "groupBox9";
             // 
-            // button32
+            // OnButton7
             // 
-            this.button32.Location = new System.Drawing.Point(15, 35);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(86, 24);
-            this.button32.TabIndex = 45;
-            this.button32.Text = "ON";
-            this.button32.UseVisualStyleBackColor = true;
+            this.OnButton7.Location = new System.Drawing.Point(15, 35);
+            this.OnButton7.Name = "OnButton7";
+            this.OnButton7.Size = new System.Drawing.Size(86, 24);
+            this.OnButton7.TabIndex = 45;
+            this.OnButton7.Text = "ON";
+            this.OnButton7.UseVisualStyleBackColor = true;
+            this.OnButton7.Click += new System.EventHandler(this.OnButton7_Click);
             // 
-            // button33
+            // OffButton7
             // 
-            this.button33.Location = new System.Drawing.Point(15, 69);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(86, 24);
-            this.button33.TabIndex = 49;
-            this.button33.Text = "OFF";
-            this.button33.UseVisualStyleBackColor = true;
+            this.OffButton7.Location = new System.Drawing.Point(15, 69);
+            this.OffButton7.Name = "OffButton7";
+            this.OffButton7.Size = new System.Drawing.Size(86, 24);
+            this.OffButton7.TabIndex = 49;
+            this.OffButton7.Text = "OFF";
+            this.OffButton7.UseVisualStyleBackColor = true;
+            this.OffButton7.Click += new System.EventHandler(this.OffButton7_Click);
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.button34);
-            this.groupBox10.Controls.Add(this.button35);
-            this.groupBox10.Location = new System.Drawing.Point(910, 485);
+            this.groupBox10.Controls.Add(this.OnButton8);
+            this.groupBox10.Controls.Add(this.OffButton8);
+            this.groupBox10.Location = new System.Drawing.Point(910, 479);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(117, 125);
             this.groupBox10.TabIndex = 51;
             this.groupBox10.TabStop = false;
             // 
-            // button34
+            // OnButton8
             // 
-            this.button34.Location = new System.Drawing.Point(15, 35);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(86, 24);
-            this.button34.TabIndex = 45;
-            this.button34.Text = "ON";
-            this.button34.UseVisualStyleBackColor = true;
+            this.OnButton8.Location = new System.Drawing.Point(15, 35);
+            this.OnButton8.Name = "OnButton8";
+            this.OnButton8.Size = new System.Drawing.Size(86, 24);
+            this.OnButton8.TabIndex = 45;
+            this.OnButton8.Text = "ON";
+            this.OnButton8.UseVisualStyleBackColor = true;
+            this.OnButton8.Click += new System.EventHandler(this.OnButton8_Click);
             // 
-            // button35
+            // OffButton8
             // 
-            this.button35.Location = new System.Drawing.Point(15, 69);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(86, 24);
-            this.button35.TabIndex = 49;
-            this.button35.Text = "OFF";
-            this.button35.UseVisualStyleBackColor = true;
+            this.OffButton8.Location = new System.Drawing.Point(15, 69);
+            this.OffButton8.Name = "OffButton8";
+            this.OffButton8.Size = new System.Drawing.Size(86, 24);
+            this.OffButton8.TabIndex = 49;
+            this.OffButton8.Text = "OFF";
+            this.OffButton8.UseVisualStyleBackColor = true;
+            this.OffButton8.Click += new System.EventHandler(this.OffButton8_Click);
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.button8);
-            this.groupBox11.Controls.Add(this.button10);
-            this.groupBox11.Location = new System.Drawing.Point(147, 485);
+            this.groupBox11.Controls.Add(this.OnButton2);
+            this.groupBox11.Controls.Add(this.OffButton2);
+            this.groupBox11.Location = new System.Drawing.Point(147, 479);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(117, 125);
             this.groupBox11.TabIndex = 50;
             this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "groupBox11";
             // 
-            // button8
+            // OnButton2
             // 
-            this.button8.Location = new System.Drawing.Point(15, 35);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(86, 24);
-            this.button8.TabIndex = 45;
-            this.button8.Text = "ON";
-            this.button8.UseVisualStyleBackColor = true;
+            this.OnButton2.Location = new System.Drawing.Point(15, 35);
+            this.OnButton2.Name = "OnButton2";
+            this.OnButton2.Size = new System.Drawing.Size(86, 24);
+            this.OnButton2.TabIndex = 45;
+            this.OnButton2.Text = "ON";
+            this.OnButton2.UseVisualStyleBackColor = true;
+            this.OnButton2.Click += new System.EventHandler(this.OnButton2_Click);
             // 
-            // button10
+            // OffButton2
             // 
-            this.button10.Location = new System.Drawing.Point(15, 69);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(86, 24);
-            this.button10.TabIndex = 49;
-            this.button10.Text = "OFF";
-            this.button10.UseVisualStyleBackColor = true;
+            this.OffButton2.Location = new System.Drawing.Point(15, 69);
+            this.OffButton2.Name = "OffButton2";
+            this.OffButton2.Size = new System.Drawing.Size(86, 24);
+            this.OffButton2.TabIndex = 49;
+            this.OffButton2.Text = "OFF";
+            this.OffButton2.UseVisualStyleBackColor = true;
+            this.OffButton2.Click += new System.EventHandler(this.OffButton2_Click);
             // 
             // ControlForm
             // 
@@ -692,33 +699,33 @@ namespace WinFormsApp5.Forms
         public System.Windows.Forms.Label 상태;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button OnButton1;
+        private System.Windows.Forms.Button OffButton1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button OnButton3;
+        private System.Windows.Forms.Button OffButton3;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button OnButton4;
+        private System.Windows.Forms.Button OffButton4;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button OnButton5;
+        private System.Windows.Forms.Button OffButton5;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.Button OnButton6;
+        private System.Windows.Forms.Button OffButton6;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button OnButton7;
+        private System.Windows.Forms.Button OffButton7;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.Button OnButton8;
+        private System.Windows.Forms.Button OffButton8;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button OnButton2;
+        private System.Windows.Forms.Button OffButton2;
     }
 }
