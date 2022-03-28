@@ -17,28 +17,18 @@ using WinFormsApp5;
 namespace WinFormsApp5.Forms
 {
   
-        class Address
-        {
-            public uint gateway;
-            public ulong device;
-            public Address(uint gatewayAdr, ulong deviceAdr)
-            {
-                gateway = gatewayAdr;
-                device = deviceAdr;
-            }
-     
-        }
-    
+
     public partial class ControlForm : Form
     {
-        Address address1 = new Address(0, 0);
-        Address address2 = new Address(0, 0);
-        Address address3 = new Address(0, 0);
-        Address address4 = new Address(0, 0);
-        Address address5 = new Address(0, 0);
-        Address address6 = new Address(0, 0);
-        Address address7 = new Address(0, 0);
-        Address address8 = new Address(0, 0);
+
+        Address address1 = new Address(0,  0x4C7525C1CF89);
+        Address address2 = new Address(0,  0x4C7525C1CF89);
+        Address address3 = new Address(0,  0x4C7525C1CF89);
+        Address address4 = new Address(0,  0x4C7525C1CF89);
+        Address address5 = new Address(0,  0x4C7525C1CF89);
+        Address address6 = new Address(0,  0x4C7525C1CF89);
+        Address address7 = new Address(0,  0x4C7525C1CF89);
+        Address address8 = new Address(0, 0x4C7525C1CF89);
 
         //gatewayAddress = address1.gateway;
         ushort opid = 0;
@@ -272,91 +262,142 @@ namespace WinFormsApp5.Forms
         private void ControlForm_Load(object sender, EventArgs e)
         {
         }
-
-        private void OnButton1_Click(object sender, EventArgs e)
+        private void DeviceOn1(uint gatewayAdr, ulong deviceAdr)
         {
-            Form2.f2.TxRtu(++Form2.f2.TxCnt, gatewayAddress, deviceAddress, new byte[]
-            {
+            Form2.f2.TxRtu(++Form2.f2.TxCnt, gatewayAdr, deviceAdr,
+            new byte[] {
                     0x01, 0x10, 0x01, 0xF7, 0x00, 0x04, 0x08,
                     0x00, 0x00, (byte)(opid>>8),(byte)opid,0x00,0x00,0x00,0x00
             });
             opid++;
-
+        }
+        private void DeviceOff1(uint gatewayAdr, ulong deviceAdr)
+        {
+            Form2.f2.TxRtu(++Form2.f2.TxCnt, gatewayAdr, deviceAdr,
+            new byte[] {
+                    0x01, 0x10, 0x01, 0xF7, 0x00, 0x04, 0x08,
+                    0x00, 0x00, (byte)(opid>>8),(byte)opid,0x00,0x00,0x00,0x00
+            });
+            opid++;
+        }
+        private void DeviceOn2(uint gatewayAdr, ulong deviceAdr)
+        {
+            Form2.f2.TxRtu(++Form2.f2.TxCnt, gatewayAdr, deviceAdr,
+            new byte[] {
+                    0x01, 0x10, 0x01, 0xF7, 0x00, 0x04, 0x08,
+                    0x00, 0x00, (byte)(opid>>8),(byte)opid,0x00,0x00,0x00,0x00
+            });
+            opid++;
+        }
+        private void DeviceOff2(uint gatewayAdr, ulong deviceAdr)
+        {
+            Form2.f2.TxRtu(++Form2.f2.TxCnt, gatewayAdr, deviceAdr,
+            new byte[] {
+                    0x01, 0x10, 0x01, 0xF7, 0x00, 0x04, 0x08,
+                    0x00, 0x00, (byte)(opid>>8),(byte)opid,0x00,0x00,0x00,0x00
+            });
+            opid++;
+        }
+        private void OnButton1_Click(object sender, EventArgs e)
+        {
+            DeviceOn1(address1.gateway , address1.device);
         }
 
         private void OffButton1_Click(object sender, EventArgs e)
         {
-
+            DeviceOff1(address1.gateway, address1.device);
         }
 
         private void OnButton2_Click(object sender, EventArgs e)
         {
-
+            DeviceOn2(address1.gateway, address1.device);
         }
 
         private void OffButton2_Click(object sender, EventArgs e)
         {
-
+            DeviceOff2(address1.gateway, address1.device);
         }
 
         private void OnButton3_Click(object sender, EventArgs e)
         {
-
+            DeviceOn1(address1.gateway, address1.device);
         }
 
         private void OffButton3_Click(object sender, EventArgs e)
         {
-
+            DeviceOff1(address1.gateway, address1.device);
         }
 
         private void OnButton4_Click(object sender, EventArgs e)
         {
-
+            DeviceOn2(address1.gateway, address1.device);
         }
 
         private void OffButton4_Click(object sender, EventArgs e)
         {
-
+            DeviceOff2(address1.gateway, address1.device);
         }
 
         private void OnButton5_Click(object sender, EventArgs e)
         {
-
+            DeviceOn1(address1.gateway, address1.device);
         }
 
         private void OffButton5_Click(object sender, EventArgs e)
         {
-
+            DeviceOff1(address1.gateway, address1.device);
         }
 
         private void OnButton6_Click(object sender, EventArgs e)
         {
-
+            DeviceOn2(address1.gateway, address1.device);
         }
 
         private void OffButton6_Click(object sender, EventArgs e)
         {
-
+            DeviceOff2(address1.gateway, address1.device);
         }
 
         private void OnButton7_Click(object sender, EventArgs e)
         {
-
+            DeviceOn1(address1.gateway, address1.device);
         }
 
         private void OffButton7_Click(object sender, EventArgs e)
         {
-
+            DeviceOff1(address1.gateway, address1.device);
         }
 
         private void OnButton8_Click(object sender, EventArgs e)
         {
-
+            DeviceOn2(address1.gateway, address1.device);
         }
 
         private void OffButton8_Click(object sender, EventArgs e)
         {
+            DeviceOff2(address1.gateway, address1.device);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
 
         }
     }
+    class Address
+    {
+        public uint gateway;
+        public ulong device;
+        public Address(uint gatewayAdr, ulong deviceAdr)
+        {
+            gateway = gatewayAdr;
+            device = deviceAdr;
+        }
+
+    }
+
 }

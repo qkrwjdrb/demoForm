@@ -83,6 +83,9 @@ namespace WinFormsApp5.Forms
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.OnButton2 = new System.Windows.Forms.Button();
             this.OffButton2 = new System.Windows.Forms.Button();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -94,6 +97,7 @@ namespace WinFormsApp5.Forms
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
+            this.groupBox12.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -108,7 +112,7 @@ namespace WinFormsApp5.Forms
             this.groupBox3.Controls.Add(this.textBox2);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Location = new System.Drawing.Point(20, 247);
+            this.groupBox3.Location = new System.Drawing.Point(20, 298);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(245, 169);
             this.groupBox3.TabIndex = 41;
@@ -223,7 +227,7 @@ namespace WinFormsApp5.Forms
             this.groupBox4.Controls.Add(this.상태);
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Location = new System.Drawing.Point(274, 247);
+            this.groupBox4.Location = new System.Drawing.Point(274, 298);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(177, 169);
             this.groupBox4.TabIndex = 44;
@@ -367,7 +371,7 @@ namespace WinFormsApp5.Forms
             // 
             // OffButton1
             // 
-            this.OffButton1.Location = new System.Drawing.Point(15, 69);
+            this.OffButton1.Location = new System.Drawing.Point(15, 72);
             this.OffButton1.Name = "OffButton1";
             this.OffButton1.Size = new System.Drawing.Size(86, 24);
             this.OffButton1.TabIndex = 49;
@@ -407,7 +411,7 @@ namespace WinFormsApp5.Forms
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(20, 162);
+            this.groupBox1.Location = new System.Drawing.Point(20, 213);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(272, 63);
             this.groupBox1.TabIndex = 53;
@@ -418,7 +422,7 @@ namespace WinFormsApp5.Forms
             // 
             this.groupBox2.Controls.Add(this.OnButton1);
             this.groupBox2.Controls.Add(this.OffButton1);
-            this.groupBox2.Location = new System.Drawing.Point(20, 479);
+            this.groupBox2.Location = new System.Drawing.Point(20, 488);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(117, 125);
             this.groupBox2.TabIndex = 16;
@@ -428,7 +432,7 @@ namespace WinFormsApp5.Forms
             // 
             this.groupBox5.Controls.Add(this.OnButton3);
             this.groupBox5.Controls.Add(this.OffButton3);
-            this.groupBox5.Location = new System.Drawing.Point(274, 479);
+            this.groupBox5.Location = new System.Drawing.Point(274, 488);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(117, 125);
             this.groupBox5.TabIndex = 50;
@@ -446,7 +450,7 @@ namespace WinFormsApp5.Forms
             // 
             // OffButton3
             // 
-            this.OffButton3.Location = new System.Drawing.Point(15, 69);
+            this.OffButton3.Location = new System.Drawing.Point(15, 72);
             this.OffButton3.Name = "OffButton3";
             this.OffButton3.Size = new System.Drawing.Size(86, 24);
             this.OffButton3.TabIndex = 49;
@@ -458,7 +462,7 @@ namespace WinFormsApp5.Forms
             // 
             this.groupBox6.Controls.Add(this.OnButton4);
             this.groupBox6.Controls.Add(this.OffButton4);
-            this.groupBox6.Location = new System.Drawing.Point(401, 479);
+            this.groupBox6.Location = new System.Drawing.Point(401, 488);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(117, 125);
             this.groupBox6.TabIndex = 50;
@@ -476,7 +480,7 @@ namespace WinFormsApp5.Forms
             // 
             // OffButton4
             // 
-            this.OffButton4.Location = new System.Drawing.Point(15, 69);
+            this.OffButton4.Location = new System.Drawing.Point(15, 72);
             this.OffButton4.Name = "OffButton4";
             this.OffButton4.Size = new System.Drawing.Size(86, 24);
             this.OffButton4.TabIndex = 49;
@@ -488,7 +492,7 @@ namespace WinFormsApp5.Forms
             // 
             this.groupBox7.Controls.Add(this.OnButton5);
             this.groupBox7.Controls.Add(this.OffButton5);
-            this.groupBox7.Location = new System.Drawing.Point(529, 479);
+            this.groupBox7.Location = new System.Drawing.Point(529, 488);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(117, 125);
             this.groupBox7.TabIndex = 50;
@@ -506,7 +510,7 @@ namespace WinFormsApp5.Forms
             // 
             // OffButton5
             // 
-            this.OffButton5.Location = new System.Drawing.Point(15, 69);
+            this.OffButton5.Location = new System.Drawing.Point(15, 72);
             this.OffButton5.Name = "OffButton5";
             this.OffButton5.Size = new System.Drawing.Size(86, 24);
             this.OffButton5.TabIndex = 49;
@@ -518,7 +522,7 @@ namespace WinFormsApp5.Forms
             // 
             this.groupBox8.Controls.Add(this.OnButton6);
             this.groupBox8.Controls.Add(this.OffButton6);
-            this.groupBox8.Location = new System.Drawing.Point(656, 479);
+            this.groupBox8.Location = new System.Drawing.Point(657, 488);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(117, 125);
             this.groupBox8.TabIndex = 50;
@@ -536,7 +540,7 @@ namespace WinFormsApp5.Forms
             // 
             // OffButton6
             // 
-            this.OffButton6.Location = new System.Drawing.Point(15, 69);
+            this.OffButton6.Location = new System.Drawing.Point(15, 72);
             this.OffButton6.Name = "OffButton6";
             this.OffButton6.Size = new System.Drawing.Size(86, 24);
             this.OffButton6.TabIndex = 49;
@@ -548,7 +552,7 @@ namespace WinFormsApp5.Forms
             // 
             this.groupBox9.Controls.Add(this.OnButton7);
             this.groupBox9.Controls.Add(this.OffButton7);
-            this.groupBox9.Location = new System.Drawing.Point(783, 479);
+            this.groupBox9.Location = new System.Drawing.Point(785, 488);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(117, 125);
             this.groupBox9.TabIndex = 50;
@@ -566,7 +570,7 @@ namespace WinFormsApp5.Forms
             // 
             // OffButton7
             // 
-            this.OffButton7.Location = new System.Drawing.Point(15, 69);
+            this.OffButton7.Location = new System.Drawing.Point(15, 72);
             this.OffButton7.Name = "OffButton7";
             this.OffButton7.Size = new System.Drawing.Size(86, 24);
             this.OffButton7.TabIndex = 49;
@@ -578,7 +582,7 @@ namespace WinFormsApp5.Forms
             // 
             this.groupBox10.Controls.Add(this.OnButton8);
             this.groupBox10.Controls.Add(this.OffButton8);
-            this.groupBox10.Location = new System.Drawing.Point(910, 479);
+            this.groupBox10.Location = new System.Drawing.Point(913, 488);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(117, 125);
             this.groupBox10.TabIndex = 51;
@@ -596,7 +600,7 @@ namespace WinFormsApp5.Forms
             // 
             // OffButton8
             // 
-            this.OffButton8.Location = new System.Drawing.Point(15, 69);
+            this.OffButton8.Location = new System.Drawing.Point(15, 72);
             this.OffButton8.Name = "OffButton8";
             this.OffButton8.Size = new System.Drawing.Size(86, 24);
             this.OffButton8.TabIndex = 49;
@@ -608,7 +612,7 @@ namespace WinFormsApp5.Forms
             // 
             this.groupBox11.Controls.Add(this.OnButton2);
             this.groupBox11.Controls.Add(this.OffButton2);
-            this.groupBox11.Location = new System.Drawing.Point(147, 479);
+            this.groupBox11.Location = new System.Drawing.Point(147, 488);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(117, 125);
             this.groupBox11.TabIndex = 50;
@@ -626,7 +630,7 @@ namespace WinFormsApp5.Forms
             // 
             // OffButton2
             // 
-            this.OffButton2.Location = new System.Drawing.Point(15, 69);
+            this.OffButton2.Location = new System.Drawing.Point(15, 72);
             this.OffButton2.Name = "OffButton2";
             this.OffButton2.Size = new System.Drawing.Size(86, 24);
             this.OffButton2.TabIndex = 49;
@@ -634,19 +638,51 @@ namespace WinFormsApp5.Forms
             this.OffButton2.UseVisualStyleBackColor = true;
             this.OffButton2.Click += new System.EventHandler(this.OffButton2_Click);
             // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.button8);
+            this.groupBox12.Controls.Add(this.button9);
+            this.groupBox12.Location = new System.Drawing.Point(20, 63);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(117, 125);
+            this.groupBox12.TabIndex = 51;
+            this.groupBox12.TabStop = false;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(15, 35);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(86, 24);
+            this.button8.TabIndex = 45;
+            this.button8.Text = "ON";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(15, 69);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(86, 24);
+            this.button9.TabIndex = 49;
+            this.button9.Text = "OFF";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // ControlForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1045, 748);
+            this.Controls.Add(this.groupBox12);
             this.Controls.Add(this.groupBox11);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox9);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -667,6 +703,7 @@ namespace WinFormsApp5.Forms
             this.groupBox9.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -727,5 +764,8 @@ namespace WinFormsApp5.Forms
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.Button OnButton2;
         private System.Windows.Forms.Button OffButton2;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }
