@@ -22,13 +22,13 @@ namespace WinFormsApp5.Forms
     {
 
         Address address1 = new Address(0,  0x4C7525C1CF89);
-        Address address2 = new Address(0,  0x4C7525C1CF89);
-        Address address3 = new Address(0,  0x4C7525C1CF89);
-        Address address4 = new Address(0,  0x4C7525C1CF89);
-        Address address5 = new Address(0,  0x4C7525C1CF89);
-        Address address6 = new Address(0,  0x4C7525C1CF89);
-        Address address7 = new Address(0,  0x4C7525C1CF89);
-        Address address8 = new Address(0, 0x4C7525C1CF89);
+        Address address2 = new Address(0,  0x4C7525C1CF9d);
+        Address address3 = new Address(0,  0x4C7525C1CF81);
+        Address address4 = new Address(0,  0x24a1605818d9);
+        Address address5 = new Address(0,  0x4C7525C1CF71);
+        Address address6 = new Address(0,  0x4C7525C1CF8d);
+        Address address7 = new Address(0,  0x4C75258912f5);
+        //Address address8 = new Address(0, 0x4C7525C1CF89);
 
         //gatewayAddress = address1.gateway;
         ushort opid = 0;
